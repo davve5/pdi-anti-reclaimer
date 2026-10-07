@@ -48,16 +48,6 @@ Protect the file:
 chmod 600 .env
 ```
 
-**Never commit `.env` to GitHub.**
-
-Make sure `.gitignore` contains:
-
-```gitignore
-.env
-node_modules/
-logs/
-```
-
 ## Run manually
 
 ```bash
