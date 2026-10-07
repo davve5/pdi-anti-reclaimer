@@ -32,9 +32,7 @@ async function main() {
     log(`Opening ${pdiUrl}`);
 
     const pidLoginUrl =
-      `${pdiUrl}/login.do?user_name=${username}` +
-      `&sys_action=sysverb_login` +
-      `&user_password=${password}`;
+      `${pdiUrl}/login.do?user_name=${username}&sys_action=sysverb_login&user_password=${password}`;
 
     await page.goto(pidLoginUrl, {
       waitUntil: "domcontentloaded",
