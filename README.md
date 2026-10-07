@@ -21,7 +21,7 @@ cd pdi-anti-reclaimer
 Install dependencies:
 
 ```bash
-npm ci
+npm install
 ```
 
 Install Playwright:
@@ -77,7 +77,7 @@ pwd
 For example:
 
 ```text
-/home/pi/pdi-activity
+/home/pi/pdi-anti-reclaimer
 ```
 
 Edit your cron:
@@ -89,7 +89,7 @@ crontab -e
 Run every Sunday at 09:00:
 
 ```cron
-0 9 * * 0 cd /home/pi/pdi-activity && /usr/bin/npm start >> /home/pi/pdi-activity/cron.log 2>&1
+0 9 * * 0 cd /home/pi/pdi-anti-reclaimer && /usr/bin/npm start >> /home/pi/pdi-anti-reclaimer/cron.log 2>&1
 ```
 
 Check the cron configuration:
@@ -101,7 +101,7 @@ crontab -l
 Check the logs:
 
 ```bash
-tail -f /home/pi/pdi-activity/cron.log
+tail -f /home/pi/pdi-anti-reclaimer/cron.log
 ```
 
 ## Pages
